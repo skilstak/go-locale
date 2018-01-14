@@ -3,9 +3,10 @@ package locale
 import "testing"
 
 func TestDetect(t *testing.T) {
-	if lc, err := Detect(); err != nil {
-		t.Fatal(err)
+	loc := Detect()
+	if loc == "" {
+		t.Fatal("Empty")
 	} else {
-		t.Logf("detected locale: %q", lc)
+		t.Logf("detected locale: %q", loc)
 	}
 }
