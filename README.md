@@ -13,3 +13,8 @@ Features
 * Eliminated use of `init()` and unnecessary `map`
 * Defaults to `en_US` but `Default` can be changed
 
+TODO
+----
+
+* Long form dates tied to more languages
+
